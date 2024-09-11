@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Water Gun Game</title>
+</head>
+<body>
+    <h1>Welcome to Snake Water Gun Game!</h1>
+    <p>Snake beats Water, Water beats Gun, and Gun beats Snake.</p>
+
+    <form action="/play" method="post">
+        <label for="user_choice">Enter your choice:</label>
+        <select name="user_choice" id="user_choice">
+            <option value="snake">Snake</option>
+            <option value="water">Water</option>
+            <option value="gun">Gun</option>
+        </select>
+        <button type="submit">Play</button>
+    </form>
+
+    {% if result %}
+    <h2>Game Result</h2>
+    <p>Your choice: {{ user_choice }}</p>
+    <p>Computer's choice: {{ computer_choice }}</p>
+    <p>{{ result }}</p>
+    {% endif %}
+</body>
+</html>
+        
