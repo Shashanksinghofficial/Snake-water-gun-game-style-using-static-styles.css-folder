@@ -1,3 +1,4 @@
+create snake water gun game with html(templates/index.html) & css (static/style.css) with python and flask framework on local host
 1. create a directory like
 mkdir my_game
 2.for open directory type
